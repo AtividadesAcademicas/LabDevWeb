@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 2s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.box{
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.box-logo {
+  height: 10vh;
+  width: 10vw;
+  display: block;
+  position: absolute;
+  -webkit-animation: moveX 5s linear 0s infinite alternate, moveY 4s linear 0s infinite alternate;
+  -moz-animation: moveX 5s linear 0s infinite alternate, moveY 4s linear 0s infinite alternate;
+  -o-animation: moveX 5s linear 0s infinite alternate, moveY 4s linear 0s infinite alternate;
+  animation: moveX 5s linear 0s infinite alternate, moveY 4s linear 0s infinite alternate;
+}
+
+@-webkit-keyframes moveX {
+  from { left: 0; } to { left: 90vw; }
+}
+@-moz-keyframes moveX {
+  from { left: 0; } to { left: 90vw; }
+}
+@-o-keyframes moveX {
+  from { left: 0; } to { left: 90vw; }
+}
+@keyframes moveX {
+  from { left: 0; } to { left: 90vw; }
+}
+
+@-webkit-keyframes moveY {
+  from { top: 0; } to { top: 90vh; }
+}
+@-moz-keyframes moveY {
+  from { top: 0; } to { top: 90vh; }
+}
+@-o-keyframes moveY {
+  from { top: 0; } to { top: 90vh; }
+}
+@keyframes moveY {
+  from { top: 0; } to { top: 90vh; }
+}
